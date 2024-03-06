@@ -1,0 +1,47 @@
+{
+	"name": "@zeabur/svelte-adapter",
+	"version": "0.0.4",
+	"description": "A SvelteKit adapter that creates a Zeabur app",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zeabur/svelte-kit",
+		"directory": "packages/adapter-zeabur"
+	},
+	"license": "MIT",
+	"homepage": "https://kit.svelte.dev",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"import": "./index.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"types": "index.d.ts",
+	"files": [
+		"files",
+		"index.js",
+		"utils.js",
+		"index.d.ts"
+	],
+	"scripts": {
+		"lint": "prettier --check .",
+		"format": "pnpm lint --write",
+		"check": "tsc",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"@vercel/nft": "^0.26.1",
+		"esbuild": "^0.19.11"
+	},
+	"devDependencies": {
+		"@sveltejs/kit": "workspace:^",
+		"@sveltejs/vite-plugin-svelte": "^3.0.1",
+		"@types/node": "^18.19.3",
+		"typescript": "^5.3.3",
+		"vitest": "^1.2.0"
+	},
+	"peerDependencies": {
+		"@sveltejs/kit": "^2.4.0"
+	}
+}
