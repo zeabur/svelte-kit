@@ -1,6 +1,6 @@
 {
 	"name": "@zeabur/svelte-adapter",
-	"version": "0.0.4",
+	"version": "1.0.0",
 	"description": "A SvelteKit adapter that creates a Zeabur app",
 	"repository": {
 		"type": "git",
